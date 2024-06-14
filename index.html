@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GHI and Specific Yield Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GHI and Specific Yield Calculator</h1>
+        <form id="calculator-form">
+            <label for="solar-capacity">Solar Capacity (in kW):</label>
+            <input type="text" id="solar-capacity" required>
+
+            <label for="no-of-days">Number of Days:</label>
+            <input type="number" id="no-of-days" required>
+
+            <label for="temperature-coefficient">Temperature Coefficient (in percentage):</label>
+            <input type="text" id="temperature-coefficient" required>
+
+            <label for="shadow-loss-percentage">Shadow Loss Percentage (in percentage):</label>
+            <input type="text" id="shadow-loss-percentage" required>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" required>
+
+            <label for="start-time">Start Time (in MM-DD-YYYY format):</label>
+            <input type="date" id="start-time" required>
+
+            <label for="end-time">End Time (in MM-DD-YYYY format):</label>
+            <input type="date" id="end-time" required>
+
+            <label for="no-of-years">Number of Years:</label>
+            <input type="number" id="no-of-years" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
